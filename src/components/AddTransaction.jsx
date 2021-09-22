@@ -12,10 +12,10 @@ export default function AddTransaction() {
     const newTransaction={
         id:uuid4,
         detail:newDetail,
-        amount:newAmount
+        amount:Number(newAmount)
     }
     updateTransaction(newTransaction)
-    console.log(newDetail,newAmount)
+    console.log(newDetail,newAmount,'testing')
    } 
   
 
