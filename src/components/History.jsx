@@ -8,7 +8,7 @@ export default function History() {
     return (
         <div>
             <h3>Transaction History</h3>
-            <ul>
+            <ul className='list'>
         
             {transactions.map(transaction=>
             

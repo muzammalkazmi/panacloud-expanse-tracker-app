@@ -12,7 +12,7 @@ import {GlobalProvider} from './context/GlobalContext'
 function App() {
   return (
     
-    <div className="App">
+    <div className="app">
       <GlobalProvider>
       <Header/>
       <Balance/>

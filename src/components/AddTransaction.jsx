@@ -5,16 +5,17 @@ import  {GlobalData}  from '../context/GlobalContext'
 
 export default function AddTransaction() {
     const[newDetail,setNewDetail]=useState('')
-    const[newAmount,setNewAmount]=useState()
+    const[newAmount,setNewAmount]=useState(0)
     const {updateTransaction}=useContext(GlobalData)
    const onSubmit=(e)=>{
        e.preventDefault();
     const newTransaction={
         id:uuid4,
-        newDetail,
-        newAmount
+        detail:newDetail,
+        amount:newAmount
     }
     updateTransaction(newTransaction)
+    console.log(newDetail,newAmount)
    } 
   
 
@@ -34,16 +35,18 @@ export default function AddTransaction() {
                 </div>
                 <div>
                 <label>Amount</label>
-                <input type='text' 
+                <div>
+                <input type='number' 
                 placeholder='Enter Amount'
                 value={newAmount}
                 onChange={((ev)=>setNewAmount(ev.target.value))}
                 />
                 </div>
+                </div>
 
                
-                <div>
-                    <button type='submit' >Enter</button>
+                <div className='enter'>
+                    <button type='submit' id='submit' >Enter</button>
                 </div>
             </form>
         </div>
