@@ -1,74 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-body{ height: auto;
-    width:500px;
-    
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+body {
+    height: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Raleway', sans-serif;
-    border:1px solid red;
-    padding:0;
-    margin:0;
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
 }
-.app{
-    margin:30px auto;
-    background-color:lightgrey;
+
+.app {
+    margin: 30px auto;
+    background-color: lightgrey;
 }
-h1{
-    letter-spacing:2px;
-    margin:0;
-    background-color:white;
+
+h1 {
+    letter-spacing: 2px;
+    margin: 0;
+    background-color: white;
 }
-h2{
-    letter-spacing:1px;
-    background-color:white;
+
+h2 {
+    letter-spacing: 1px;
+    background-color: white;
 }
-.income-expanse-container{
-    background-color:white;
-    display:flex;
-    justify-content:space-between;
-    padding:0 20px
-    
+
+.income-expanse-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px
 }
+
 input[type='text'],
-input[type='number']{
-    border:1px solid #dedede;
-    height:25px;
-    width:100%
+input[type='number'] {
+    border: 1px solid #dedede;
+    height: 25px;
+    width: 100%
 }
-#submit{
-    height:30px;
-    margin:10px 0;
-    width:100%;
+
+#submit {
+    height: 30px;
+    margin: 10px 0;
+    width: 100%;
 }
-.list{
-    list-style-type:none;
-    padding:0;
+
+.list {
+    list-style-type: none;
+    padding: 0;
 }
-.list li{
-background-color:white;
-margin:5px 0;
-display:flex;
-justify-content:space-between;
-position:relative;
-padding:10px;
-font-weight:bold;
+
+.list li {
+    background-color: white;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    font-weight: bold;
 }
-.dlt-btn{
-    position:absolute;
-    right:0;
-    margin-left:20px;
+
+.dlt-btn {
+    position: absolute;
+    right: 0;
+    margin-left: 20px;
 }
-.balance{
-    text-align:center;
-    background-color:white;
-    height:auto;
-    
+
+.balance {
+    text-align: center;
+    background-color: white;
+    height: auto;
+}
+
+.plus {
+    color: green;
+}
+
+.minus {
+    color: red;
 }
